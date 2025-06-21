@@ -81,7 +81,7 @@ const AnimatedSection = ({ children, className = '' }) => {
   );
 };
 
-const LoadingScreen = ({ onPlayMusic, isMusicPlaying, showIframe }) => (
+const LoadingScreen = () => (
   <div className="fixed inset-0 bg-[#1A2C47] flex flex-col justify-center items-center z-50">
     <style>
       {`
@@ -98,25 +98,6 @@ const LoadingScreen = ({ onPlayMusic, isMusicPlaying, showIframe }) => (
         <Fish className="text-amber-400" size={80} />
     </div>
     <p className="text-white text-lg mt-4 font-serif">Đang tải bất ngờ cho {ANH_BA_INFO.ten}...</p>
-    {/* Nút bật nhạc nền */}
-    {!isMusicPlaying && (
-      <button
-        onClick={onPlayMusic}
-        className="fixed top-8 right-8 px-5 py-2 bg-amber-400 text-blue-900 font-bold rounded-full shadow-lg hover:bg-amber-300 transition z-50"
-      >
-        <span role="img" aria-label="Loa">🔊</span> Bật nhạc nền
-      </button>
-    )}
-    {/* Iframe nhạc, chỉ render sau khi đã bấm nút */}
-    {showIframe && (
-      <iframe
-        width="640"
-        height="180"
-        src="https://zingmp3.vn/embed/song/Z8Z98CU8?start=true"
-        allow="autoplay"
-        title="Nhạc nền"
-      />
-    )}
   </div>
 );
 
