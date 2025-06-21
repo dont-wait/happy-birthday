@@ -34,12 +34,15 @@ const DANH_SACH_LOI_CHUC = [
 
 // Danh sách ảnh kỷ niệm gia đình
 const ANH_GIA_DINH = [
+  {src: images.aba2concun, caption: "Anh Ba và 2 cún cưng"},
   { src: images.aba_self, caption: "Anh Ba tự sướng" },
   { src: images.aba_aoXanh, caption: "Anh Ba mặc áo xanh" },
+  { src: images.aba_aoXam, caption: "Anh Ba mặc áo xám" },
   { src: images.aba_chongdau, caption: "Anh Ba suy tư" },
   { src: images.aba_nam_cungcho, caption: "Anh Ba nằm cùng cún" },
   { src: images.aba_ochua, caption: "Anh Ba đi chùa" },
   { src: images.aba_chatga, caption: "Anh Ba chặt gà" },
+  {src: images.aba_aoden, caption: "Anh Ba mặc áo đen"},
 ];
 
 const useIntersectionObserver = (options) => {
