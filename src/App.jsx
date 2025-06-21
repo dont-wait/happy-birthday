@@ -5,7 +5,6 @@ import './index.css';
 import images from './images'
 import fishvideo from './assets/fishvideo.mp4';
 import fishvideo2 from './assets/fishvideo2.mp4';
-import tet from './assets/tet.mp4';
 
 const ANH_BA_INFO = {
   ten: "Anh Ba",
